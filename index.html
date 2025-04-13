@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website | HTML CSS JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ----------------- Menu ----------------- -->
+
+    <header>
+        <div class="container" id="cont">
+            <nav>
+                <span class="wa">WA<span class="q">Q</span>AS</span>
+                <ul id="ul">
+                    <li style="display: flex; align-items: center; justify-content: center; background-color: #262626; margin-bottom: 20px;"><img src="icons/xmark-solid.svg" class="close-icon" onclick="closeMenu()"></li>
+                    <li><a href="#home" class="link a" onclick="openLink()">Home</a></li>
+                    <li><a href="#about" class="link a" onclick="openLink()">About</a></li>
+                    <li><a href="#portfolio" class="link a" onclick="openLink()">Portfolio</a></li>
+                    <li><a href="#contact" class="link a" onclick="openLink()">Contact</a></li>
+                </ul>
+                <img src="icons/bars-solid.svg" class="bar-icon" id="open-menu" onclick="openMenu()">
+            </nav>
+            <div class="header-content">
+                <p class="fed">Front End Developer</p>
+                <div class="top-head">
+                    <h1>Hi! I'm <span>Waqas</span> Adil</h1>
+                    <h1>From Pakistan</h1>
+                </div>
+                <div class="bottom-head">
+                    <h1>Hi! I'm <span>Waqas</span></h1>
+                    <h1>Adil From</h1>
+                    <h1>Pakistan</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ----------------- About ----------------- -->
+
+    <div id="about">
+        <div class="container" id="cont">
+            <div class="row">
+                <div class="col-left">
+                    <img src="images/user.png">
+                </div>
+                <div class="col-right">
+                    <h2>About Me</h2>
+                    <div class="see">
+                        <p class="link active-link" onclick="openTab('skills', event)">Skills</p>
+                        <p class="link" onclick="openTab('experience', event)">Experience</p>
+                        <p class="link" onclick="openTab('education', event)">Education</p>
+                    </div>
+                    <!-- ----------------- Skills ----------------- -->
+                    <div id="skills" class="tab active-tab">
+                        <ul>
+                            <li>UI/UX Design</li>
+                            <p>Bootstrap & Tailwind CSS</p>
+                            <li>Front End Development</li>
+                            <p>HTML5, CSS3, JavaScript & jQuery</p>
+                            <li>Back End Development</li>
+                            <p>PHP</p>
+                            <li>Server Side Rendering</li>
+                            <p>NodeJS, Express</p>
+                            <li>Database Management</li>
+                            <p>MySQL, MongoDB</p>
+                        </ul>
+                    </div>
+                    <!-- ----------------- Experience ----------------- -->
+                    <div id="experience" class="tab">
+                        <ul>
+                            <div>
+                                <li>Web Application Development</li>
+                                <!-- <span>2024 - Present</span> -->
+                            </div>
+                            <p>Company Name</p>
+                            <div>
+                                <li>Database Management System</li>
+                                <!-- <span>2023 - 2024</span> -->
+                            </div>
+                            <p>Company Name</p>
+                            <div>
+                                <li>Web Development Course Tutor</li>
+                                <!-- <span>2021 - 2023</span> -->
+                            </div>
+                            <p>Company Name</p>
+                        </ul>
+                    </div>
+                    <!-- ----------------- Education ----------------- -->
+                    <div id="education" class="tab">
+                        <ul>
+                            <div>
+                                <li>BS Computer Science</li>
+                                <!-- <span>2024 - Continue</span> -->
+                            </div>
+                            <p>University Name</p>
+                            <div>
+                                <li>ADP Computer Science</li>
+                                <!-- <span>2022 - 2024</span> -->
+                            </div>
+                            <p>University Name</p>
+                            <div>
+                                <li>Intermediate in Computer Science</li>
+                                <!-- <span>2020 - 2022</span> -->
+                            </div>
+                            <p>College Name</p>
+                            <div>
+                                <li>Matric (Computer Science)</li>
+                                <!-- <span>2018 - 2020</span> -->
+                            </div>
+                            <p>School Name</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------- Portfolio ----------------- -->
+
+    <div id="portfolio">
+        <div class="container" id="cont">
+            <h2>My Portfolio</h2>
+            <div class="ser-box">
+                <div class="boxes">
+                    <img src="images/work-1.png">
+                    <div class="work">
+                        <h3>Shopify Store</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi neque, quas possimus ratione,
+                            voluptate illo eaque amet temporibus quam molestias laudantium.</p>
+                        <div>
+                            <img src="icons/arrow-up-right-from-square-solid.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <img src="images/work-2.png">
+                    <div class="work">
+                        <h3>Marketing App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi neque, quas possimus ratione,
+                            voluptate illo eaque amet temporibus quam molestias laudantium.</p>
+                        <div>
+                            <img src="icons/arrow-up-right-from-square-solid.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <img src="images/work-3.png">
+                    <div class="work">
+                        <h3>E-commerce Store</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi neque, quas possimus ratione,
+                            voluptate illo eaque amet temporibus quam molestias laudantium.</p>
+                        <div>
+                            <img src="icons/arrow-up-right-from-square-solid.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------- Contact ----------------- -->
+
+    <div id="contact">
+        <div class="container" id="cont">
+            <div class="row">
+                <div class="con-col-1">
+                    <h2>Contact Me</h2>
+                    <div class="mp">
+                        <img src="icons/envelope-solid.svg">
+                        <p>abd@gmail.com</p>
+                    </div>
+                    <div class="mp">
+                        <img src="icons/phone-solid.svg">
+                        <p>+92 323-4027673</p>
+                    </div>
+                    <div class="icons">
+                        <img src="icons/facebook-brands.svg">
+                        <img src="icons/instagram-brands.svg">
+                        <img src="icons/whatsapp-brands.svg">
+                    </div>
+                    <a href="#">Download CV</a>
+                </div>
+                <div class="con-col-2">
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Enter Your Name" id="name" name="name">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Enter Your Email" id="email" name="email">
+                        <label for="message">Message</label>
+                        <textarea rows="6" id="message" name="message" placeholder="Enter Your Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>Copyright 2025 | All right reserved</section>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
