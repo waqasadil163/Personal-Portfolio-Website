@@ -129,6 +129,7 @@ header span {
     width: 15px;
     cursor: pointer;
     display: none;
+    height: 60px;
 }
 
 .bar-icon {
